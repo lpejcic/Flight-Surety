@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <div id="display-wrapper" class="top-20">
+        </div>
+        <div class="row top-20">
+            <label class="form">Flight</label>
+            <select id="flights">
+                <option value="0 | 0">Select a flight!</option>
+                <option value="AA111 | 1626280168">AA111 | 1626280168</option>
+                <option value="AA222 | 1636280158">AA222 | 1636280158</option>
+                <option value="AA333 | 1626270158">AA333 | 1626270158</option>
+                <option value="2G111 | 1626280258">2G111 | 1626280258</option>
+                <option value="DL111 | 1626280187">DL111 | 1626280187</option>
+                <option value="DL222 | 1626280218">DL222 | 1626280218</option>
+                <option value="US111 | 1626280198">US111 | 1626280198</option>
+                <option value="US222 | 1626280658">US222 | 1626280658</option>
+                <option value="CP111 | 1624880158">CP111 | 1624880158</option>
+            </select>
+            <p>&nbsp;&nbsp;&nbsp;</p>
+            <label class="form">Amount (ETH)</label> <input type="text" id="insurance-amount">
+            <btn class="btn btn-primary" id="buy-insurance">Purchase Insurance</btn>
+        </div>
+        <div id="display-wrapper" class="top-20">
+        </div>
+        <div class="row top-20">
+            <label class="form">Flight</label>
+            <select id="flights-oracle">
+                <option value="0 | 0">Select a flight!</option>
+                <option value="AA111 | 1626280168">AA111 | 1626280168</option>
+                <option value="AA222 | 1636280158">AA222 | 1636280158</option>
+                <option value="AA333 | 1626270158">AA333 | 1626270158</option>
+                <option value="2G111 | 1626280258">2G111 | 1626280258</option>
+                <option value="DL111 | 1626280187">DL111 | 1626280187</option>
+                <option value="DL222 | 1626280218">DL222 | 1626280218</option>
+                <option value="US111 | 1626280198">US111 | 1626280198</option>
+                <option value="US222 | 1626280658">US222 | 1626280658</option>
+                <option value="CP111 | 1624880158">CP111 | 1624880158</option>
+            </select>
+            <p>&nbsp;&nbsp;&nbsp;</p>
+            <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+        </div>
+    </main>
+</body>
+
+</html>
